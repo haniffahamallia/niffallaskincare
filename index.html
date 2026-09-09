@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Niffalla — Inner Beauty, Outer Glow. Skincare modern dengan nuansa soft blue, white, dan grey." />
+  <title>Niffalla | Inner Beauty • Outer Glow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <p data-i18n="topbar">Free shipping untuk pembelian pilihan • Kulit sehat, hati lebih tenang ✦</p>
+  </div>
+
+  <header class="header" id="home">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Niffalla Home">
+        <span>Niffalla</span>
+        <small>INNER BEAUTY • OUTER GLOW</small>
+      </a>
+
+      <button class="mobile-menu" aria-label="Buka menu" id="mobileMenu">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="nav_home">Home</a>
+        <a href="#products" data-i18n="nav_products">Products</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#promo" data-i18n="nav_promo">Promo</a>
+        <a href="#journal" data-i18n="nav_journal">Journal</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+        <button class="lang-btn" id="langBtn" aria-label="Ganti bahasa">EN</button>
+        <button class="cart-btn" id="cartBtn" aria-label="Keranjang">
+          <span>🛍</span><b id="cartCount">0</b>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="search-panel" id="searchPanel">
+    <div class="container search-wrap">
+      <input id="searchInput" type="search" placeholder="Cari produk atau artikel..." />
+      <button id="closeSearch">×</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow glow-1"></div><div class="hero-glow glow-2"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero_eyebrow">A gentle ritual for your skin</p>
+          <h1>Niffalla</h1>
+          <div class="tagline">INNER BEAUTY <span>•</span> OUTER GLOW</div>
+          <p class="hero-script" data-i18n="hero_script">Kulit sehat, hati pun lebih tenang.</p>
+          <p class="hero-text" data-i18n="hero_text">Perawatan lembut yang dirancang untuk menemani ritual kecantikanmu setiap hari.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#products" data-i18n="shop_now">Shop Collection</a>
+            <a class="btn ghost" href="#about" data-i18n="discover">Discover Niffalla</a>
+          </div>
+          <div class="trust-row">
+            <span>✦ <b data-i18n="trust1">Hydrating Formula</b></span>
+            <span>♡ <b data-i18n="trust2">All Skin Types</b></span>
+            <span>✦ <b data-i18n="trust3">Gentle Care</b></span>
+          </div>
+        </div>
+
+        <div class="hero-slider" aria-label="Niffalla skincare slider">
+          <div class="slides">
+            <img class="slide active" src="assets/niffalla-collection.png" alt="Niffalla skincare collection" />
+            <img class="slide" src="assets/niffalla-cleanser.png" alt="Niffalla Hydra Gentle Cleanser" />
+            <img class="slide" src="assets/niffalla-moisture.png" alt="Niffalla Moisture Daily Cream" />
+            <img class="slide" src="assets/niffalla-toner.png" alt="Niffalla Calm Soothing Toner" />
+            <img class="slide" src="assets/niffalla-serum.png" alt="Niffalla Glow Brightening Serum" />
+          </div>
+          <button class="slide-arrow prev" aria-label="Previous slide">‹</button>
+          <button class="slide-arrow next" aria-label="Next slide">›</button>
+          <div class="dots" id="dots"></div>
+          <div class="slide-label" id="slideLabel">The Niffalla Collection</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits container" id="about">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-i18n="about_eyebrow">THE NIFFALLA PHILOSOPHY</p>
+          <h2 data-i18n="about_title">Inner Beauty starts with gentle care.</h2>
+        </div>
+        <p data-i18n="about_text">Kami percaya merawat kulit bukan sekadar rutinitas, tetapi momen kecil untuk kembali mencintai diri sendiri.</p>
+      </div>
+      <div class="benefit-grid">
+        <article><span>💧</span><h3 data-i18n="benefit1_title">Hydrate</h3><p data-i18n="benefit1_text">Membantu menjaga kelembapan agar kulit terasa lembut dan nyaman.</p></article>
+        <article><span>✦</span><h3 data-i18n="benefit2_title">Glow</h3><p data-i18n="benefit2_text">Mendukung tampilan kulit yang tampak lebih cerah dan fresh.</p></article>
+        <article><span>♡</span><h3 data-i18n="benefit3_title">Soothe</h3><p data-i18n="benefit3_text">Formula lembut untuk ritual skincare yang menenangkan.</p></article>
+        <article><span>❋</span><h3 data-i18n="benefit4_title">Balance</h3><p data-i18n="benefit4_text">Perawatan sederhana untuk menemani semua jenis kulit setiap hari.</p></article>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="center-head">
+          <p class="eyebrow">THE DAILY RITUAL</p>
+          <h2 data-i18n="products_title">Find your Niffalla ritual</h2>
+          <p data-i18n="products_text">Pilihan skincare essentials untuk membersihkan, menenangkan, melembapkan, dan membuat kulit tampak glowing.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image"><img src="assets/niffalla-cleanser.png" alt="Hydra Gentle Cleanser"></div>
+            <div class="product-info"><span>01 / CLEANSE</span><h3>Hydra Gentle Cleanser</h3><p data-i18n="cleanser_desc">Bersihkan kulit tanpa terasa kering.</p><div><strong>Rp 129.000</strong><button class="add-btn" data-product="Hydra Gentle Cleanser" data-price="129000" data-i18n="add_cart">Add to Cart</button></div></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="assets/niffalla-toner.png" alt="Calm Soothing Toner"></div>
+            <div class="product-info"><span>02 / PREPARE</span><h3>Calm Soothing Toner</h3><p data-i18n="toner_desc">Hydrate, soothe, dan bantu menjaga keseimbangan kulit.</p><div><strong>Rp 139.000</strong><button class="add-btn" data-product="Calm Soothing Toner" data-price="139000" data-i18n="add_cart">Add to Cart</button></div></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="assets/niffalla-serum.png" alt="Glow Brightening Serum"></div>
+            <div class="product-info"><span>03 / TREAT</span><h3>Glow Brightening Serum</h3><p data-i18n="serum_desc">Bantu kulit tampak lebih cerah dan glowing.</p><div><strong>Rp 159.000</strong><button class="add-btn" data-product="Glow Brightening Serum" data-price="159000" data-i18n="add_cart">Add to Cart</button></div></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="assets/niffalla-moisture.png" alt="Moisture Daily Cream"></div>
+            <div class="product-info"><span>04 / MOISTURIZE</span><h3>Moisture Daily Cream</h3><p data-i18n="cream_desc">Kunci kelembapan dengan rasa nyaman sepanjang hari.</p><div><strong>Rp 149.000</strong><button class="add-btn" data-product="Moisture Daily Cream" data-price="149000" data-i18n="add_cart">Add to Cart</button></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo" id="promo">
+      <div class="container promo-box">
+        <div><p class="eyebrow">NIFFALLA SPECIAL</p><h2 data-i18n="promo_title">Your soft glow starts here.</h2><p data-i18n="promo_text">Nikmati penawaran spesial untuk memulai ritual Niffalla-mu.</p></div>
+        <div class="promo-code"><small data-i18n="promo_use">Gunakan kode</small><strong>GLOW10</strong><button class="copy-btn" id="copyPromo" data-i18n="copy">Copy Code</button></div>
+      </div>
+    </section>
+
+    <section class="routine">
+      <div class="container routine-grid">
+        <div class="routine-photo">
+          <img src="assets/niffalla-collection.png" alt="Niffalla complete skincare ritual">
+        </div>
+        <div class="routine-copy">
+          <p class="eyebrow">4 SIMPLE STEPS</p>
+          <h2 data-i18n="routine_title">A little ritual, a little more glow.</h2>
+          <div class="steps">
+            <div><b>01</b><span><strong data-i18n="step1">Cleanse</strong><small data-i18n="step1_text">Mulai dengan membersihkan wajah secara lembut.</small></span></div>
+            <div><b>02</b><span><strong data-i18n="step2">Prepare</strong><small data-i18n="step2_text">Segarkan dan siapkan kulit dengan toner.</small></span></div>
+            <div><b>03</b><span><strong data-i18n="step3">Treat</strong><small data-i18n="step3_text">Gunakan serum sebagai langkah perawatan intensif.</small></span></div>
+            <div><b>04</b><span><strong data-i18n="step4">Moisturize</strong><small data-i18n="step4_text">Kunci kelembapan agar kulit terasa nyaman.</small></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journal" id="journal">
+      <div class="container">
+        <div class="section-head">
+          <div><p class="eyebrow">NIFFALLA JOURNAL</p><h2 data-i18n="journal_title">A little note for your skin.</h2></div>
+          <a href="#contact" class="text-link" data-i18n="read_more">Read more →</a>
+        </div>
+        <div class="journal-grid">
+          <article class="journal-card"><img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=1200&q=80" alt="Skincare routine"><div><small>SKINCARE 101</small><h3 data-i18n="article1">Cara membangun rutinitas skincare yang sederhana</h3><p data-i18n="article1_text">Tidak perlu banyak langkah untuk memulai perawatan yang konsisten.</p></div></article>
+          <article class="journal-card"><img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=1200&q=80" alt="Soft skincare texture"><div><small>GENTLE CARE</small><h3 data-i18n="article2">Mengapa kulit juga butuh waktu untuk beristirahat</h3><p data-i18n="article2_text">Rawat kulit dengan lembut dan dengarkan apa yang dibutuhkannya.</p></div></article>
+          <article class="journal-card"><img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1200&q=80" alt="Beauty products"><div><small>INNER BEAUTY</small><h3 data-i18n="article3">Glow yang baik dimulai dari ritual kecil</h3><p data-i18n="article3_text">Buat momen merawat diri terasa lebih tenang dan bermakna.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <div class="container newsletter-box">
+        <div><p class="eyebrow">STAY IN THE GLOW</p><h2 data-i18n="newsletter_title">A little beauty note, just for you.</h2></div>
+        <form id="newsletterForm"><input type="email" required placeholder="Your email address"><button class="btn primary" type="submit" data-i18n="subscribe">Subscribe</button></form>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-head"><div><p class="eyebrow">YOUR BAG</p><h2 data-i18n="cart_title">Your Niffalla Ritual</h2></div><button id="closeCart">×</button></div>
+    <div class="cart-items" id="cartItems"><p class="empty-cart" data-i18n="empty_cart">Keranjangmu masih kosong.</p></div>
+    <div class="cart-footer"><div><span data-i18n="total">Total</span><strong id="cartTotal">Rp 0</strong></div><button class="btn primary checkout" id="checkoutBtn" data-i18n="checkout">Checkout via WhatsApp</button></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <a class="wa-float" id="waFloat" href="#" aria-label="Chat WhatsApp"><span>✆</span><small data-i18n="wa_chat">Chat with us</small></a>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#home"><span>Niffalla</span><small>INNER BEAUTY • OUTER GLOW</small></a><p data-i18n="footer_text">Gentle skincare ritual for your everyday glow.</p></div>
+      <div><h4>SHOP</h4><a href="#products" data-i18n="nav_products">Products</a><a href="#promo" data-i18n="nav_promo">Promo</a><a href="#about" data-i18n="nav_about">About</a></div>
+      <div><h4>NIFFALLA</h4><a href="#journal" data-i18n="nav_journal">Journal</a><a href="#contact" data-i18n="nav_contact">Contact</a><a href="#home" data-i18n="privacy">Privacy</a></div>
+      <div><h4 data-i18n="follow">FOLLOW THE GLOW</h4><p>Instagram · TikTok · Pinterest</p></div>
+    </div>
+    <div class="copyright">© <span id="year"></span> NIFFALLA. <span data-i18n="rights">All rights reserved.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
